@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Ujjwal Mahajan</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Contact Me</h2>
+        <form action="send-email.php" method="post" enctype="multipart/form-data">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <label for="media">Attached Media (optional):</label>
+          <input type="file" id="media" name="media">
+          
+          <input type="submit" value="Submit">
+        </form>
+        <script src="contact-form-handler.js"></script>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2023 My Portfolio</p>
+    </footer>
+  </body>
+</html>
